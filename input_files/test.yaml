@@ -1,16 +1,16 @@
 Particles:
     - Species:
-        name: Sr
-        number_density: 4.0e+15       # /m^3
-        atomic_weight: 88
-        num: 10000                    # total number of particles of ion1
+        name: Rb
+        number_density: 1.0e+13       # /m^3
+        atomic_weight: 85
+        num: 1000                    # total number of particles of ion1
         Z: 1.0                        # degree of ionization
-        temperature: 0.002
+        temperature: 2
 
 Potential:
     type: Yukawa                 # potential type
     method: PPPM                  # Linked-cell
-    electron_temperature: 430
+    electron_temperature: 25
     rc: 2.346716e-05    # cut-off radius, meter
     pppm_mesh: [64, 64, 64]
     pppm_aliases: [3,3,3]
@@ -38,7 +38,7 @@ Parameters:
 
 IO:
   verbose: yes
-  simulations_dir: UCP_DIH_N10k
+  simulations_dir: test
 
 Observables:
   - RadialDistributionFunction:
